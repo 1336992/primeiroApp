@@ -1,0 +1,185 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <!--
+        Customize this policy to fit your own app's needs. For more guidance, see:
+            https://github.com/apache/cordova-plugin-whitelist/blob/master/README.md#content-security-policy
+        Some notes:
+            * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
+            * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
+            * Disables use of inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
+                * Enable inline JS: add 'unsafe-inline' to default-src
+        -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *">
+
+    <!-- Required meta tags-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+
+    <!-- Your app title -->
+    <title>Estude no IFB</title>
+
+    <!-- This template defaults to the iOS CSS theme. To support both iOS and material design themes, see the Framework7 Tutorial at the link below:
+        http://www.idangero.us/framework7/tutorials/maintain-both-ios-and-material-themes-in-single-app.html
+     -->
+
+    <link rel="stylesheet" href="lib/framework7/css/framework7.ios.min.css">
+    <link rel="stylesheet" href="lib/framework7/css/framework7.ios.colors.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/framework7-icons.css">
+
+</head>
+
+<body class= "theme-gray layout-white">
+    <!-- Status bar overlay for full screen mode (PhoneGap) -->
+    <div class="statusbar-overlay"></div>
+
+    <!-- Panels overlay-->
+    <div class="panel-overlay"></div>
+    <!-- Left panel with reveal effect-->
+    <div class="panel panel-left panel-reveal">
+        
+
+    <h2>Estude no IFB</h2>
+    <hr class="linha">
+
+        <div class="content-block-title">Menu</div>
+        <div class="list-block">
+          <ul>
+            <li>
+              <a href="#" class="item-link item-content">
+                <div class="item-inner">
+                  <div class="item-title">Processo Seletivo</div>
+                  
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="item-link item-content">
+                <div class="item-inner">
+                  <div class="item-title">Escolha o seu Curso</div>
+                  
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="item-link item-content">
+                <div class="item-inner">
+                  <div class="item-title">Seleções em Andamento</div>
+                  
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="item-link item-content">
+                <div class="item-inner">
+                  <div class="item-title">Seleções Anteriores</div>
+                  
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="item-link item-content">
+                <div class="item-inner">
+                  <div class="item-title">Perguntas Frequentes</div>
+                  
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="item-link item-content">
+                <div class="item-inner">
+                  <div class="item-title">Educação a Distância</div>
+                  
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <p><a id="sair" href="#" class="button button-round active color-red">Sair</a></p>
+        
+    </div>
+
+    <!-- Views -->
+    <div class="views">
+        <!-- Your main view, should have "view-main" class -->
+        <div class="view view-main">
+            <!-- Top Navbar-->
+            <div class="navbar ">
+                <div class="navbar-inner">
+                    <div class="center sliding ">Estude no IFB</div>
+                    <div class="right sliding"> <a href="#" class="link icon-only open-panel"><i class="icon icon-bars"></i></a> </div>
+
+                    
+
+                </div>  
+            </div>
+            <!-- Pages container, because we use fixed-through navbar and toolbar, it has additional appropriate classes-->
+            <!-- <div class="pages navbar-through toolbar-through">  -->
+            <div class="pages navbar-through toolbar-through">
+                <!-- Page, "data-page" contains page name -->
+                <div data-page="index" class="page ">
+                    <!-- Scrollable page content -->
+                    <div class="page-content">
+                       
+                            
+                            <div class="row">
+                                
+                                <div class="col-100">
+                                    <img id=img-main src="/img/ifb-estude.png">
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-33 tablet-25">
+                                  <a href="https://google.com" class="external"> <img class="img-options" src=/img/processoseletivo.png> </a>
+                                </div>
+                                <div class="col-33 tablet-25"><img class="img-options" src=/img/escollhaoseu.png> </div>
+                                <div class="col-33 tablet-25"><img class="img-options" src=/img/seleoes.png> </div>
+                                <div class="col-33 tablet-25"><img class="img-options" src=/img/anteriores.png> </div>
+                                <div class="col-33 tablet-25"><img class="img-options" src=/img/perguntass.png> </div>
+                                <div class="col-33 tablet-25"><img class="img-options" src=/img/ead.png> </div>
+                            </div>
+
+                           <a href="bloco.html">blocos</a><br>
+                           <a href="grid.html">grid</a><br>
+                           <a href="cards.html">cards</a><br>
+                           <a href="buttons.html">Buttons</a><br>
+                           <a href="slides.html">slides</a><br>
+                           <a href="texto.html">texto</a><br>
+                           
+                           <a href="lists.html">lists</a><br>
+                           <a href="formulario.html">formulario</a><br>
+                           <a href="msg.html">msg</a>
+
+
+
+                             
+                    </div>
+                </div>
+            </div>
+            <!-- Bottom Toolbar-->
+            <div class="toolbar">
+                <div class="toolbar-inner">
+                    <!-- Toolbar links -->
+                    <a href="index.html"><i class="f7-icons">home_fill</i></a>
+                    <a href="index.html"><i class="f7-icons">money_dollar_fill</i></a>
+                    <a href="index.html"><i class="f7-icons">cloud</i></a>
+                    <a href="index.html"><i class="f7-icons">alarm</i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="lib/framework7/js/framework7.min.js"></script>
+    <script type="text/javascript" src="js/my-app.js"></script>
+</body>
+
+</html>
